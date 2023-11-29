@@ -28,7 +28,7 @@
     ClassicEditor
         .create(document.querySelector('#editor'), {
             ckfinder: {
-                uploadUrl: '{{ route("upload.image") }}'
+                uploadUrl: '{{ route("upload") }}'
             }
         })
         .catch(error => {

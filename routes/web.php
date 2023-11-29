@@ -21,12 +21,12 @@ Route::get('/', function () {
 Route::get('/review', [MainController::class,'review']);
 Route::post('/review/check', [MainController::class,'review_check']);
 
-Route::post('/store', [MainController::class,'store']);
-Route::post('/upload-image', 'MainController@upload')->name('upload.image');
-
-
-
 Route::get('/redactor', [MainController::class,'redactor']);
+Route::post('/store', [MainController::class,'store']);
+Route::post('/upload', 'MainController@upload')->name('upload');
+
+
+
 
 
 

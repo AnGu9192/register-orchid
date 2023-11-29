@@ -54,6 +54,7 @@ class MainController extends Controller
 
         $uploadedImage = $request->file('image');
         $imageName = time() . '_' . $uploadedImage->getClientOriginalName();
+
         $uploadedImage->storeAs('public/images', $imageName); 
 
         $imageUrl = asset('storage/images/' . $imageName);
